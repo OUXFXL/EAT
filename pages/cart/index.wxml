@@ -1,0 +1,5 @@
+<!-- 引入组件 -->
+<view class="pyg_index">
+  <!-- 搜索框开始 -->
+  <SeachInput></SeachInput>
+</view>

@@ -1,0 +1,25 @@
+<view class="swipper_detail">
+<swiper autoplay circular indicator-dots>
+<swiper-item bindtap="handlePrevewImg" data-url="{{item.pics_mid}}" wx:for="{{goodsObj.data.message.pics}}" wx:key="pics_id">
+<image mode="widthFix" src="{{item.pics_mid}}"></image>
+</swiper-item>
+ 
+</swiper>
+</view>
+<view class="goods_price">￥
+{{goodsObj.data.message.goods_price}}</view>
+<view class="goods_name_row">
+<view class="goods_name">{{goodsObj.data.message.goods_name}}</view>
+<view class="goods_collect">
+  <text class="iconfont icon-showcang"></text>
+  <view class="collect_text">收藏</view>
+</view>
+</view>
+<view class="goods_info">
+  <view class="goods_info_title"> 图文详情</view>
+  <view class="goods_info_content">
+    <!-- {{goodsObj.data.message.goods_introduce}} -->
+    <!-- 富文本 -->
+    <rich-text nodes="{{goodsObj.data.message.goods_introduce}}"></rich-text>
+  </view>
+</view>
